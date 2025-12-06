@@ -48,7 +48,8 @@ class _RecipeScreenState extends State<RecipeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Food Recipes")),
+      appBar: AppBar(title: const Text("Food Recipes"),
+      backgroundColor: Colors.blueAccent,),
       body: recipes.isEmpty
           ? const Center(child: CircularProgressIndicator())
           : ListView.builder(
